@@ -1,0 +1,31 @@
+- @chars =['&#8487;','&#x02135;','&#x02041;','&#x0210F;','&#x0210C;','&#x02111;;','&#x02130;','&#x00427;','&#8713;','&#8721;','&#8776;','&#8836;','&#950;','&#958;','&#977;','&#8487;','&#x02135;','&#x02041;','&#x0210F;','&#x0210C;','&#x02111;;','&#x02130;','&#x00427;','&#8713;','&#8721;','&#8776;','&#8836;','&#950;','&#958;','&#977;','&#8487;','&#x02135;','&#x02041;','&#x0210F;','&#x0210C;','&#x02111;;','&#x02130;','&#x00427;','&#8713;','&#8721;','&#8776;','&#8836;','&#950;','&#958;','&#977;']
+-(1..16).each do
+  .column
+    -@chars.each do |chars|
+      .row
+        %p #{chars}
+.container
+  .container_inner
+    .container_inner__login
+      .login
+        .login_profile
+          %img.logo{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/ecotech.svg'}
+          %img.pulse{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rings.svg'}
+        .login_desc
+          %h3 
+            Welcome back 
+            %span ecoTech
+        .login_inputs
+          %form
+            .tip
+              Your password will have been emailed to you along with this development link.
+            %input{:type => 'password', :placeholder => 'Your password', :required => 'required'}
+            %input{:type => 'submit', :value => 'Log in'}
+          .forgotten
+            %a{:href => '#'} Forgotten your password?
+          .login_check
+            <br/>Logging in to your client area <br/>
+            %span please wait
+      .tick
+        %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/vtick.svg'}
+            
