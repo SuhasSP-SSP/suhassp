@@ -29,6 +29,6 @@ $('form').submit(function(){
     $('.tick').css('transform','scale(1) translateY(-50%)')
   },200);
   },3650);
-  setTimeout(() => {  window.location = "https://bit.ly/MasterAdminDashboard" }, 5400);
+  setTimeout(() => {  window.location = "https://bit.ly/MasterAdminDashboard" }, 4500);
   return false;
 })
