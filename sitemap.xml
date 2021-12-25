@@ -19,5 +19,8 @@
       <loc>https://store.suhassp.com/</loc>
 </url>
 
+<url>
+      <loc>https://suhassp.com/auth/</loc>
+</url>      
 
 </urlset>
